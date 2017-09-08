@@ -22,7 +22,7 @@ public class DoubleLoop
       Tortoise.setPenColor(ColorWheel.getNextColor());
       Tortoise.move(4 * i);
       Tortoise.turn(-360 / 6);
-      // 
+      //  
       for (int j = 0; j < 15; j++)
       {
         Tortoise.setPenWidth(17);
