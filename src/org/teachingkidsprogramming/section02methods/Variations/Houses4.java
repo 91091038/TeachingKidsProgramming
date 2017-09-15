@@ -4,15 +4,15 @@ import org.teachingextensions.logo.Tortoise;
 import org.teachingextensions.logo.utils.ColorUtils.PenColors;
 import org.teachingextensions.virtualproctor.VirtualProctor;
 
-public class Houses3
+public class Houses4
 {
   public static void main(String[] args)
   {
     VirtualProctor.setClassName("Palm Digital");
     VirtualProctor.setName("Tharushi");
     Tortoise.show();
-    Tortoise.setSpeed(5);
-    Tortoise.setX(200);
+    Tortoise.setSpeed(3);
+    Tortoise.setX(0);
     int height = 40;
     drawHouse(height);
     drawHouse(120);
@@ -33,11 +33,9 @@ public class Houses3
   }
   private static void pointyRoof()
   {
-    Tortoise.setPenWidth(4);
-    Tortoise.turn(45);
     Tortoise.move(15);
-    Tortoise.turn(90);
-    Tortoise.move(15);
-    Tortoise.turn(45);
+    Tortoise.turn(120);
+    Tortoise.move(30);
+    Tortoise.turn(60);
   }
 }
