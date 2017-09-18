@@ -24,14 +24,14 @@ public class Houses4
     Tortoise.setPenColor(PenColors.getRandomColor());
     Tortoise.move(height);
     //start roof
-    pointyRoof();
+    slantedRoof();
     //end roof
     Tortoise.move(height);
     Tortoise.turn(-90);
     Tortoise.move(20);
     Tortoise.turn(-90);
   }
-  private static void pointyRoof()
+  private static void slantedRoof()
   {
     Tortoise.move(15);
     Tortoise.turn(120);
