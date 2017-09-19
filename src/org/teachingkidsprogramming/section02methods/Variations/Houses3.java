@@ -12,13 +12,13 @@ public class Houses3
     VirtualProctor.setClassName("Palm Digital");
     VirtualProctor.setName("Tharushi");
     Tortoise.show();
-    Tortoise.setSpeed(5);
-    Tortoise.setX(200);
+    Tortoise.setSpeed(10);
+    Tortoise.setX(100);
     int height = 40;
     drawHousePointyRoof(height);
     drawHouseSlantedRoof(120);
-    drawOddHouse(90);
-    drawHousePointyRoof(20);
+    drawHouseOddRoof(90);
+    drawHouseOddRoof(20);
   }
   private static void drawHousePointyRoof(int height)
   {
@@ -29,7 +29,7 @@ public class Houses3
     //end roof
     Tortoise.move(height);
     Tortoise.turn(-90);
-    Tortoise.move(40 + 10);
+    Tortoise.move(40 + 20);
     Tortoise.turn(-90);
   }
   private static void drawHouseSlantedRoof(int height)
@@ -39,12 +39,21 @@ public class Houses3
     slantedRoof();
     Tortoise.move(height);
     Tortoise.turn(-90);
-    Tortoise.move(20);
+    Tortoise.move(40 + 20);
+    Tortoise.turn(-90);
+  }
+  private static void drawHouseOddRoof(int height)
+  {
+    Tortoise.setPenColor(Reds.Red);
+    Tortoise.move(height);
+    oddRoof();
+    Tortoise.move(height);
+    Tortoise.turn(-90);
+    Tortoise.move(40 + 10);
     Tortoise.turn(-90);
   }
   private static void pointyRoof()
   {
-    Tortoise.setPenWidth(4);
     Tortoise.turn(45);
     Tortoise.move(15);
     Tortoise.turn(90);
@@ -58,10 +67,8 @@ public class Houses3
     Tortoise.move(30);
     Tortoise.turn(60);
   }
-  private static void drawOddHouse(int height)
+  private static void oddRoof()
   {
-    Tortoise.setPenColor(PenColors.Oranges.Coral);
-    Tortoise.move(height); //23 are the shape of the roof of the house
     Tortoise.turn(-45);
     Tortoise.move(30);
     Tortoise.turn(45);
@@ -73,5 +80,6 @@ public class Houses3
     Tortoise.turn(45);
     Tortoise.move(30);
     Tortoise.turn(-45);
+    //   Tortoise.move(40);
   }
 }

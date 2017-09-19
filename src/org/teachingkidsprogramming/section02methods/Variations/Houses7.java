@@ -26,11 +26,11 @@ public class Houses7
   }
   private static void drawRoundHouse(int height)
   {
-    Tortoise.move(height); //23 are the shape of the roof of the house
-    for (int i = 0; i < 360; i++)
+    Tortoise.move(height);
+    for (int i = 0; i < 1440; i++)
     {
-      Tortoise.turn(.5);
-      Tortoise.move(1);
+      Tortoise.turn(.125);
+      Tortoise.move(.25);
     }
   }
 }
