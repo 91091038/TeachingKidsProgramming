@@ -11,19 +11,29 @@ public class PyramidsOfGiza
     Tortoise.turn(-90);
     Tortoise.move(220);
     Tortoise.turn(135);
-    Tortoise.move(100);
-    Tortoise.turn(90);
-    Tortoise.move(100);
-    Tortoise.turn(-90);
-    Tortoise.move(100);
-    Tortoise.turn(90);
-    Tortoise.move(100);
-    Tortoise.turn(-90);
+    makePyramidTwo();
     Tortoise.move(100);
     Tortoise.turn(90);
     Tortoise.move(100);
     Tortoise.turn(135);
     Tortoise.move(210);
+  }
+  private static void makePyramidTwo()
+  {
+    Tortoise.turn(-90);
+    Tortoise.move(100);
+    Tortoise.turn(90);
+    Tortoise.move(100);
+    Tortoise.turn(-90);
+  }
+  private static void makePyramidOne()
+  {
+    Tortoise.turn(-90);
+    Tortoise.move(220);
+    Tortoise.turn(135);
+    Tortoise.move(100);
+    Tortoise.turn(90);
+    Tortoise.move(100);
   }
   private static void setUpPyramidLand()
   {
