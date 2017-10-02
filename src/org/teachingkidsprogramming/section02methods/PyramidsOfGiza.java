@@ -8,10 +8,12 @@ public class PyramidsOfGiza
   public static void main(String[] args) throws Exception
   {
     setUpPyramidLand();
-    Tortoise.turn(-90);
-    Tortoise.move(220);
-    Tortoise.turn(135);
+    makePyramidOne();
     makePyramidTwo();
+    makePyramidThree();
+  }
+  private static void makePyramidThree()
+  {
     Tortoise.move(100);
     Tortoise.turn(90);
     Tortoise.move(100);
