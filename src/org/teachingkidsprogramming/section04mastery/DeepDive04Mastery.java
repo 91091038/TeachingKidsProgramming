@@ -3,8 +3,6 @@ package org.teachingkidsprogramming.section04mastery;
 import org.junit.Assert;
 import org.junit.Test;
 
-import you.need.to.fill.in.the.______;
-
 @SuppressWarnings("unused")
 public class DeepDive04Mastery
 {
@@ -125,16 +123,35 @@ public class DeepDive04Mastery
   {
     String text = "42";
     Number theAnswer = Integer.parseInt(text);
-    Assert.assertEquals(theAnswer.getClass(), String.class);
-    Assert.assertEquals(theAnswer, ____);
+    Assert.assertEquals(theAnswer.getClass(), Integer.class);
+    Assert.assertEquals(theAnswer, 42);
   }
   @Test
   public void understandingDoubleNumbers() throws Exception
   {
     String text = "42";
     Number theAnswer = Double.parseDouble(text);
-    Assert.assertEquals(theAnswer.getClass(), ______.class);
-    Assert.assertEquals(theAnswer, ____);
+    Assert.assertEquals(theAnswer.getClass(), Double.class);
+    Assert.assertEquals(theAnswer, 42.0);
+  }
+  //my tests
+  @Test
+  public void doubleTrouble() throws Exception
+  {
+    Number number = 13 / 2.0;
+    Assert.assertEquals(number.getClass(), _______);
+    Assert.assertEquals(number, _______);
+  }
+  @Test
+  public void concatenateCannibals() throws Exception
+  {
+    Object number = "6 was afraid of 7 because 7 8" + 9;
+    Assert.assertEquals(number.getClass(), ___);
+    Assert.assertEquals(number, ___);
+  }
+  @Test
+  public void testThree() throws Exception
+  {
   }
   /**
    * Ignore the following, It's needed to run the deep dive
