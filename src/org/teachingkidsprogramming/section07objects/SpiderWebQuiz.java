@@ -11,6 +11,10 @@ public class SpiderWebQuiz extends SpiderQuiz
     //      Do the following the current number of times HINT: "number" is a variable name
     //      Call circle()
     //      Repeat
+    for (int i = 0; i < number; i++)
+    {
+      circle();
+    }
   }
   public void question2()
   {
